@@ -1,4 +1,4 @@
-from Crypto.Hash import SHA3_256
+from Crypto. Hash import SHA3_256
 
 def sha3(message):
     sha3_hash = SHA3_256.new()
@@ -6,11 +6,12 @@ def sha3(message):
     return sha3_hash.digest()
 
 def main():
+
     text = input("Nhập chuỗi văn bản: ").encode('utf-8')
     hashed_text = sha3(text)
 
-    print("Chuỗi văn bản đã nhập:", text.decode('utf-8'))
+    print("Chuỗi văn bản đã nhập: ", text.decode('utf-8'))
     print("SHA-3 Hash:", hashed_text.hex())
 
-if __name__ == "__main__":
+if __name__ =="_main_":
     main()
