@@ -3,7 +3,7 @@ class VigenereCipher:
     def __init__(self):
         pass
     
-    def vigenere_encrypt(self, plain_text, key):
+    def vigenere_decrypt(self, plain_text, key):
         encrypted_text = ""
         key_index = 0
         for char in plain_text:
